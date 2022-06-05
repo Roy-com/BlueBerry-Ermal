@@ -190,15 +190,16 @@ h6 {
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
+  /* position: fixed; */
+  position: absolute;
+  right: 39px;
+  top: 192px;
   z-index: 9998;
   border: 0;
-  font-size: 24px;
+  font-size: 42px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  /* background-color: #149ddd; */
   color: #fff;
   width: 40px;
   height: 40px;
@@ -221,6 +222,53 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.HomeNavbar {
+  width: 100%;
+  height: 253.36px;
+  background-color: #0e2442;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+.imageInNavabr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.HomeNavbar img {
+  margin-top: -69px;
+  width: 159px;
+}
+.iTypeIcon {
+  position: absolute;
+  bottom: 30px;
+  left: 42px;
+}
+.i-icon {
+  color: white;
+  width: 1.25em;
+  /* font-size: var(--e-icon-list-icon-size); */
+  font-size: 24px;
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  margin-right: 24px;
+}
+.i-icon_heart {
+  font-weight: 400 !important;
+}
 #hero {
   width: 100%;
   height: 100vh;
@@ -312,36 +360,117 @@ h6 {
     background-attachment: fixed;
   }
 }
+@media (min-width: 300px) {
+  #hero {
+    margin-left: -10px;
+  }
+}
 @media (max-width: 1199px) {
+  .HomeNavbar {
+    display: flex;
+  }
   .HomeSection {
     flex-direction: column;
-    left: 50px;
+    left: 0px;
+    right: 0;
     top: 150px;
     /* height: 498px; */
     /* height: 80vh;
     width: 80vw; */
     height: 100%;
     overflow: hidden;
-    top: 5px;
+    top: 306px;
   }
   .rigthSectionOfHomePage {
     /* height: 50vh; */
     height: 100%;
     width: 80vw;
+    /* border: 3px solid red; */
+    /* margin-top: 33px; */
+    margin-bottom: 8px !important;
   }
   .leftSectionOfHomePage {
     /* height: 50vh; */
     height: 100%;
     width: 80vw;
+    /* margin-bottom: -95px; */
+    /* border: 2px solid green; */
+  }
+
+  .waitlist {
+    margin-bottom: 60px;
   }
   .rigthSectionOfHomePage h2 {
     margin-top: 0px;
   }
-  .waitlist {
-    margin-bottom: 10px;
+  .responsive-iframe {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #hero {
+    height: 107vh;
   }
 }
+@media (max-width: 600px) {
+  #hero {
+    height: 107vh;
+  }
+  .waitlist {
+    margin-bottom: 0px;
+  }
+  .HomeSection {
+    height: 100%;
+  }
+  .rigthSectionOfHomePage {
+    padding: 10px;
+    /* position: relative; */
+  }
+  .paraOfrightSection {
+    margin-top: -18px !important;
+  }
+  .rigthSectionOfHomePage h2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    /* width: 300px; */
 
+    /* border: 1px solid teal; */
+  }
+  .rigthSectionOfHomePage p {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* border: 1px solid teal; */
+  }
+  .responsive-iframe {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .waitlist {
+    width: 105%;
+    margin-left: -9px;
+  }
+}
+@media (max-width: 470px) {
+  .waitlist {
+    width: 106%;
+    margin-left: -9px;
+  }
+}
+@media (max-width: 370px) {
+  .waitlist {
+    width: 107%;
+    margin-left: -9px;
+  }
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
