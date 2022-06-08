@@ -70,7 +70,6 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-
   background-color: #273c89;
   color: white;
   overflow-y: auto;
@@ -103,7 +102,6 @@ h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -230,7 +228,6 @@ h6 {
   font-size: 42px;
   transition: all 0.4s;
   outline: none !important;
-
   color: #fff;
   width: 40px;
   height: 40px;
@@ -256,7 +253,6 @@ h6 {
 .HomeNavbar {
   width: 100%;
   height: 253.36px;
-
   background-color: #273c89;
   display: flex;
   justify-content: center;
@@ -290,7 +286,6 @@ h6 {
   color: white;
   width: 1.25em;
   font-size: 24px;
-
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
@@ -309,7 +304,25 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: #dae0e8;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/HomeBackground.png") top center;
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.05;
 }
 
 .HomeSection {
@@ -339,7 +352,6 @@ h6 {
 .rigthSectionOfHomePage h2 {
   color: #273c89;
   font-family: "Aileron", Sans-serif;
-
   font-weight: 900;
   margin-bottom: 15px;
   margin-top: -50px;
@@ -389,6 +401,7 @@ h6 {
   padding-top: 60px;
   padding-bottom: 60px;
   overflow: hidden;
+  z-index: 1000;
 }
 
 @media (min-width: 1024px) {
@@ -407,7 +420,6 @@ h6 {
   .nav-menu a,
   .nav-menu a:focus {
     padding: 8px 15px;
-
     font-size: 20px;
   }
 }
@@ -427,7 +439,6 @@ h6 {
     left: 0px;
     right: 0;
     top: 150px;
-
     height: 100%;
     overflow: hidden;
     top: 306px;
@@ -477,7 +488,6 @@ h6 {
 
   .rigthSectionOfHomePage {
     padding: 10px;
-    /* position: relative; */
   }
 
   .paraOfrightSection {
@@ -531,4 +541,269 @@ h6 {
   background-color: #0e2442 !important;
   color: #b2b6b4 !important;
   height: 100vh;
+}
+
+/* Fotter  */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  z-index: 255555;
+  background-color: #273c89;
+  position: absolute;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.footerTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  pad: 15px;
+}
+
+.fotterBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2px;
+  color: white;
+}
+
+.DefinationInFooter {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 24px;
+  width: 50%;
+  padding: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.DownloadAppStore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.DownloadAppStore h3 {
+  width: 150px;
+  margin-left: 25px;
+}
+
+.DownloadAppStore h3 {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+.firstApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.secondApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.locationAndAdress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.locationAndAdress h3 a {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 800;
+}
+
+.locationAndAdress p {
+  margin-top: 20px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  color: white;
+  margin-right: 42px;
+}
+
+.DownloadAppStore img {
+  margin-top: -8px;
+}
+
+.followus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: -41px;
+}
+
+.foteerLocationLogo img {
+  max-width: 70%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.WayOfFollowUs {
+  margin-top: 20px;
+}
+
+.WayOfFollowUs i {
+  margin-right: 10px;
+}
+
+@media (max-width: 1199px) {
+  .WayOfFollowUs i {
+    margin-right: 27px;
+    font-size: 32px;
+  }
+
+  .locationAndAdress {
+    margin-left: 41px;
+    align-items: center;
+  }
+
+  .footerTop {
+    flex-direction: column;
+  }
+
+  .DefinationInFooter {
+    width: 100%;
+    text-align: center;
+  }
+
+  .firstApp {
+    flex-direction: column;
+  }
+
+  .secondApp {
+    flex-direction: column;
+  }
+
+  .location-1 {
+    display: none;
+  }
+
+  .location-2 {
+    display: none;
+  }
+
+  .location-3 {
+    display: none;
+  }
+
+  .fotterBottom {
+    flex-direction: column-reverse;
+    margin-top: 80px;
+  }
+
+  .DownloadAppStore {
+    margin-top: 30px;
+  }
+
+  .DownloadAppStore img {
+    margin-top: -8px;
+    margin-left: 17px;
+  }
+
+  .location-4 {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .location-4 img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 92px;
+    margin-top: 22px;
+  }
+
+  .followus {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .DefinationInFooter {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+  }
+
+  .firstApp h3 {
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondApp h3 {
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .followus {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .locationAndAdress {
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .followusHeading {
+    font-size: 16px;
+  }
 }
